@@ -1,0 +1,255 @@
+.navbar {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.navlinks {
+  display: flex;
+  text-align: center;
+  column-gap: 20px;
+}
+
+.navlinks a:hover {
+  text-decoration: underline;
+}
+
+.navlinks a {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header{
+  gap: 50px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+
+}
+
+.btn {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  margin-top: 5px;
+}
+
+.togglebaricon {
+  display: none;
+}
+
+.side-navbar {
+  background-color: #1d232c;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  transition: 2s;
+  height: 100%;
+  padding: 20px;
+  color: white;
+  display: none;
+}
+
+.side-navbar-links {
+  margin-bottom: 50px;
+}
+
+.side-navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.side-navbar-links a:hover {
+  text-decoration: underline;
+}
+
+.service{
+  padding: 20px;
+}
+.sc1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sc2{
+  display: flex;
+  justify-content: space-between;
+  gap:10px;
+  
+  
+}
+.sc2 div{
+  background-color:antiquewhite;
+}
+.new-arrival{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+
+}
+.new-arrival-container{
+  position: relative;
+  flex-basis: 20%;
+  margin-top: 10px;
+}
+.new-arrival button{
+  padding:7px ;
+  margin-top: 10px;
+  background-color: white;
+  color:black;
+  left: 18%;
+  top:50%;
+  position: absolute;
+}
+.input{
+  width:800px;
+  height:50px;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #1d232c;
+}
+.fb{
+  background-color: black;
+  color:white;
+  border-radius: 7px;
+  border-style: solid;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+
+}
+.footer{
+  margin-top: 20px;
+}
+.bottom{
+  width:100%;
+  height: 150px;
+  background-color: black;
+  color:white;
+  margin-top: 20%;
+  padding: 20px;
+}
+.product-search{
+  width:700px;
+  height:40px;
+  justify-content: space-between;
+  align-items: center;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #1d232c;
+  display: flex;
+  margin: auto;
+}
+.product-search input{
+  border: none;
+  background-color: transparent;
+  width:100%;
+}
+.items{
+  padding:10px;
+  text-align: center;
+}
+.items img{
+   border-radius: 10px;
+   flex-basis: 20%;
+}
+.product-sections{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  
+}
+.form{
+  width:800px;
+  height:600px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding-top: 40px;
+  padding-left:30px ;
+  padding-bottom: 40px;
+  margin-left: 20%;
+  border-radius: 10px;
+  border-style: solid;
+  position: absolute;
+  z-index: 1;
+  
+}
+.h{
+  padding-bottom: 10px;
+ 
+}
+.b2{
+  width:730px;
+  height: 50px;
+}
+.b3{
+  width:730px;
+  height: 80px;
+}
+#b4{
+  background-color: #887fff;
+  color: #1d232c;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-style: solid;
+ 
+}
+.last{
+  background-color:black;
+  color:white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.popup{
+  width:400px;
+  height:200px;
+  background-color:crimson;
+  color:black;
+  padding: 20px;
+  top: 0;
+  z-index: 2;
+  position: absolute;
+  margin-left: 40%;
+  margin-top: 5%;
+  display: none;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: crimson;
+}
+@media screen and (max-width: 600px) {
+  .togglebaricon {
+      display: block;
+  }
+
+  .navlinks {
+      display: none;
+  }
+  .imgsize{
+    display: none;
+  }
+  .service{
+    display: none;
+  }
+ .sc2{
+  flex-direction: column;
+ }
+}

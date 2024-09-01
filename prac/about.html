@@ -1,0 +1,101 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Nostra</title>
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Connect to javascript -->
+    <script src="index.js"></script>
+
+    <div class="navbar">
+        <h1>Nostra</h1>
+        <div class="navlinks">
+            <p class="a"><a href="index.html">Home</a></p>
+            <p class="a"><a href="collection.html">Collections</a></p>
+            <p class="a"><a href="about.html">About Us</a></p>
+            
+        </div>
+        <!-- Font awesome icon -->
+        <div class="tooglebaricon" onclick="shownavbar()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+
+    <!--body content-->
+    <form>
+        <div class="form">
+        <h2 class="h">Contact Us</h2>
+        <h3>Name:</h3><br>
+        <input class="b2" type="text">
+        <h3>Email:</h3><br>
+        <input class="b2" type="mail">
+        <h3>Mobile no:</h3><br>
+        <input class="b2" type="number">
+        <h3>Message:</h3><br>
+        <textarea class="b3"></textarea><br>
+
+        <button id="b4" onclick="add()">Submit</button>
+        </div>
+    </form>
+  <div class="popup">
+    <div>
+        <h3>Response Submitted Successfully! </h3>
+        <h4>Thank you, Visit us Again</h4>
+        <i class="fa-regular fa-face-grin-hearts"></i><br>
+        <button onclick="back()"  class="last">Back </button>
+    </div>
+  </div>
+  <script>
+    var form=document.querySelector(".form")
+    var popup=document.querySelector(".popup")
+
+    function add(){
+        event.preventDefault(); 
+        form.style.display="none"
+        popup.style.display="block"
+    }
+
+    function back(){
+        event.preventDefault(); 
+        form.style.display="block"
+        popup.style.display="none"
+    }
+  </script>
+  <style>
+  .bottom{
+    width:100%;
+    height: 150px;
+    background-color: black;
+    color:white;
+    margin-top: 60%;
+    padding: 20px;
+  }
+</style>
+    <!--last bottom-->
+<div class="bottom">
+    <div>
+        <h3>Nostra</h3>
+        <p>The standard chunk of lorem used since 1950 is reproduced below on interest</p>
+        <div>
+        <p <i class="fa-brands fa-instagram" style="color: white;"></i>
+            <i class="fa-brands fa-twitter" style="color: white;"></i>
+            <i class="fa-brands fa-facebook" style="color: white;"></i></p>
+        <p>nostra@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <script src="collection.js"></script>
+    </body>
+</html>
